@@ -107,20 +107,15 @@ LAB SETUP INSTRUCTIONS
 import express from "express";
 const app = express();
 
-
 // create server
-
-
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}`);
+});
 // Query params: /echo?name=Ali&age=22
-
 
 // Route params: /profile/First/Last
 
-
 // Route param middleware example: /users/42
 
-
 // Route params: /users/:userId route
-
-
-
